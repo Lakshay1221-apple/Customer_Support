@@ -1,6 +1,6 @@
 # PyTorch with CUDA 12.1 (Adjust to cu118 if on older drivers)
 --extra-index-url https://download.pytorch.org/whl/cu121
-torch>=2.2.0
+torch>=2.7.0
 
 # Hugging Face Core Stack
 transformers>=4.40.0
@@ -12,6 +12,7 @@ evaluate>=0.4.1
 peft>=0.10.0
 trl>=0.8.6
 bitsandbytes>=0.43.1  # Crucial for 4-bit/8-bit QLoRA on local GPUs
+unsloth
 
 # Utilities
 scipy
