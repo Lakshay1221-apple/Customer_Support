@@ -1,0 +1,21 @@
+# PyTorch with CUDA 12.1 (Adjust to cu118 if on older drivers)
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch>=2.2.0
+
+# Hugging Face Core Stack
+transformers>=4.40.0
+datasets>=2.19.0
+accelerate>=0.29.0
+evaluate>=0.4.1
+
+# Fine-Tuning & Quantization
+peft>=0.10.0
+trl>=0.8.6
+bitsandbytes>=0.43.1  # Crucial for 4-bit/8-bit QLoRA on local GPUs
+
+# Utilities
+scipy
+einops
+wandb  # For logging loss and training metrics
+
+
