@@ -17,5 +17,6 @@ bitsandbytes>=0.43.1  # Crucial for 4-bit/8-bit QLoRA on local GPUs
 scipy
 einops
 wandb  # For logging loss and training metrics
+pytest>=8.0.0
 
 

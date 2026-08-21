@@ -1,0 +1,244 @@
+{
+  "raw_examples": 20000,
+  "final_examples": 10890,
+  "removed_examples": {
+    "non_english": 8077,
+    "missing_required_fields": 1033,
+    "missing_subject": 1032,
+    "missing_body": 1,
+    "duplicates": 0,
+    "invalid_records": 0
+  },
+  "label_distribution": {
+    "type": {
+      "Change": 1156,
+      "Incident": 4252,
+      "Problem": 2269,
+      "Request": 3213
+    },
+    "queue": {
+      "Billing and Payments": 1194,
+      "Customer Service": 1710,
+      "General Inquiry": 148,
+      "Human Resources": 183,
+      "IT Support": 1274,
+      "Product Support": 2035,
+      "Returns and Exchanges": 530,
+      "Sales and Pre-Sales": 282,
+      "Service Outages and Maintenance": 415,
+      "Technical Support": 3119
+    },
+    "priority": {
+      "high": 4150,
+      "low": 2201,
+      "medium": 4539
+    }
+  },
+  "raw_profile": {
+    "number_of_rows": 20000,
+    "number_of_columns": 15,
+    "column_names": [
+      "subject",
+      "body",
+      "answer",
+      "type",
+      "queue",
+      "priority",
+      "language",
+      "tag_1",
+      "tag_2",
+      "tag_3",
+      "tag_4",
+      "tag_5",
+      "tag_6",
+      "tag_7",
+      "tag_8"
+    ],
+    "missing_values": {
+      "queue": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "language": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "tag_7": {
+        "missing_count": 16072,
+        "missing_percentage": 80.36
+      },
+      "tag_6": {
+        "missing_count": 12649,
+        "missing_percentage": 63.245
+      },
+      "priority": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "tag_4": {
+        "missing_count": 1539,
+        "missing_percentage": 7.695
+      },
+      "type": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "tag_1": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "tag_8": {
+        "missing_count": 18093,
+        "missing_percentage": 90.465
+      },
+      "tag_2": {
+        "missing_count": 46,
+        "missing_percentage": 0.23
+      },
+      "answer": {
+        "missing_count": 4,
+        "missing_percentage": 0.02
+      },
+      "tag_3": {
+        "missing_count": 95,
+        "missing_percentage": 0.475
+      },
+      "tag_5": {
+        "missing_count": 6909,
+        "missing_percentage": 34.545
+      },
+      "body": {
+        "missing_count": 2,
+        "missing_percentage": 0.01
+      },
+      "subject": {
+        "missing_count": 1461,
+        "missing_percentage": 7.305
+      }
+    },
+    "categorical_distributions": {
+      "type": {
+        "Change": {
+          "count": 2075,
+          "percentage": 10.375
+        },
+        "Incident": {
+          "count": 7978,
+          "percentage": 39.89
+        },
+        "Problem": {
+          "count": 4184,
+          "percentage": 20.92
+        },
+        "Request": {
+          "count": 5763,
+          "percentage": 28.815
+        }
+      },
+      "queue": {
+        "Billing and Payments": {
+          "count": 2086,
+          "percentage": 10.43
+        },
+        "Customer Service": {
+          "count": 3152,
+          "percentage": 15.76
+        },
+        "General Inquiry": {
+          "count": 263,
+          "percentage": 1.315
+        },
+        "Human Resources": {
+          "count": 338,
+          "percentage": 1.69
+        },
+        "IT Support": {
+          "count": 2292,
+          "percentage": 11.46
+        },
+        "Product Support": {
+          "count": 3708,
+          "percentage": 18.54
+        },
+        "Returns and Exchanges": {
+          "count": 1001,
+          "percentage": 5.005
+        },
+        "Sales and Pre-Sales": {
+          "count": 572,
+          "percentage": 2.86
+        },
+        "Service Outages and Maintenance": {
+          "count": 764,
+          "percentage": 3.82
+        },
+        "Technical Support": {
+          "count": 5824,
+          "percentage": 29.12
+        }
+      },
+      "priority": {
+        "high": {
+          "count": 7801,
+          "percentage": 39.005
+        },
+        "low": {
+          "count": 4055,
+          "percentage": 20.275
+        },
+        "medium": {
+          "count": 8144,
+          "percentage": 40.72
+        }
+      },
+      "language": {
+        "de": {
+          "count": 8077,
+          "percentage": 40.385
+        },
+        "en": {
+          "count": 11923,
+          "percentage": 59.615
+        }
+      }
+    },
+    "text_statistics": {
+      "subject": {
+        "minimum": 0,
+        "maximum": 412,
+        "mean": 41.59,
+        "median": 41.0
+      },
+      "body": {
+        "minimum": 0,
+        "maximum": 2259,
+        "mean": 394.44,
+        "median": 357.0
+      },
+      "answer": {
+        "minimum": 0,
+        "maximum": 1779,
+        "mean": 407.67,
+        "median": 388.0
+      }
+    }
+  },
+  "token_statistics": {
+    "available": true,
+    "model": "unsloth/Llama-3.2-3B-Instruct",
+    "minimum": 115,
+    "maximum": 474,
+    "mean": 182.47,
+    "median": 176,
+    "p95": 259,
+    "p99": 317,
+    "over_512": 0,
+    "over_1024": 0,
+    "over_2048": 0
+  },
+  "split_sizes": {
+    "train": 8712,
+    "validation": 1089,
+    "test": 1089
+  }
+}

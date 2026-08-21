@@ -9,7 +9,7 @@ DATASET_URL = (
     "resolve/main/dataset-tickets-multi-lang-4-20k.csv"
 )
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATASET_PATH = PROJECT_ROOT / "data" / "dataset-tickets-multi-lang-4-20k.csv"
+DATASET_PATH = PROJECT_ROOT / "data" / "raw" / "dataset-tickets-multi-lang-4-20k.csv"
 
 
 def load_customer_support_dataset():
