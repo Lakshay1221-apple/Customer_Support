@@ -2,6 +2,8 @@ import torch
 from trl import SFTTrainer
 from transformers import TrainingArguments
 
+from .output_config import OUTPUT_DIR
+
 
 def create_trainer(
     model,
@@ -15,7 +17,7 @@ def create_trainer(
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
         args=TrainingArguments(
-            output_dir="outputs",
+            output_dir=str(OUTPUT_DIR),
             num_train_epochs=3,
             per_device_train_batch_size=1,
             gradient_accumulation_steps=8,

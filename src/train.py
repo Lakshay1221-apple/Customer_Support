@@ -1,6 +1,5 @@
-from pathlib import Path
-
 from .dataset_loader import load_formatted_dataset
+from .output_config import FINAL_MODEL_DIR
 
 
 def main():
@@ -27,10 +26,10 @@ def main():
 
     trainer.train()
 
-    output_dir = Path("outputs/final_model")
-    output_dir.mkdir(parents=True, exist_ok=True)
-    model.save_pretrained(output_dir)
-    tokenizer.save_pretrained(output_dir)
+    FINAL_MODEL_DIR.mkdir(parents=True, exist_ok=True)
+    model.save_pretrained(FINAL_MODEL_DIR)
+    tokenizer.save_pretrained(FINAL_MODEL_DIR)
+
 
 
 if __name__ == "__main__":

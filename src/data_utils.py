@@ -3,13 +3,15 @@
 from pathlib import Path
 
 from datasets import load_dataset
+from .data.config import RAW_PATH
 
 DATASET_URL = (
     "https://huggingface.co/datasets/Tobi-Bueck/customer-support-tickets/"
     "resolve/main/dataset-tickets-multi-lang-4-20k.csv"
 )
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATASET_PATH = PROJECT_ROOT / "data" / "raw" / "dataset-tickets-multi-lang-4-20k.csv"
+DATASET_PATH = RAW_PATH
+
 
 
 def load_customer_support_dataset():
